@@ -16,6 +16,30 @@ _The project is a C# based address book web application with Nancy. The site all
 
 ## Specifications
 
+_The program returns 0 if there is no matches in the input string._
+
+* Input: word: "Hello" string: "Good Morning"
+* Output: 0
+
+_The program returns 1 if the input word is exactly same as the input string._
+
+* Input: word: "Hello" string: "Hello"
+* Output: 1
+
+_The program returns 1 if the input string contains the input word once._
+
+* Input: word: "Hello" string: "Hello World"
+* Output: 1
+
+_The program returns the number of times that the input word repeats in the input string._
+
+* Input: word: "Hello" string: "Hello World. Hello Universe."
+* Output: 2
+
+_The program returns the number of times the input word repeats in the input string, case insensitively._
+
+* Input: word: "hello" string: "Hello World. Hello Universe."
+* Output: 2
 
 ## Known Bugs
 
