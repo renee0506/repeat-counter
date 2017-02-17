@@ -7,25 +7,23 @@ namespace RepeatCounterProject
   {
     public int CountRepeats(string wordInput, string stringInput)
     {
-      //Convert Inputs to Char Array
-      char[] stringInputArray = stringInput.ToCharArray();
-      char[] wordInputArray = wordInput.ToCharArray();
       int count = 0;
-
       int i = 0;
-      while (i < stringInputArray.Length)
+      //set the initial value of counter and loop tracker i
+      while (i < stringInput.Length)
       {
-        if (stringInputArray[i] == wordInputArray[0])
+        if (stringInput[i] == wordInput[0])//detect the beginning char of word input
         {
-          string slice = stringInput.Substring(i, wordInput.Length);
-          if (slice == wordInput)
+          string slice = stringInput.Substring(i, wordInput.Length);//slice the string input from index i to i+the length of word input
+          if (slice == wordInput)//if index i is the beginning of the wordinput, the slice should be same as word input
           {
             count+=1;
-            i = i + wordInput.Length-1;
+            i = i + wordInput.Length-1;//jump to the end of the word and start the new searching from there (need to minus 1 here because of the i++ outside the if statement)
           }
         }
-        i++;
+        i++;//if not match countinue to next char
       }
+
       return count;
     }
   }
