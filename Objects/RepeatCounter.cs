@@ -7,14 +7,39 @@ namespace RepeatCounterProject
   {
     public int CountRepeats(string wordInput, string stringInput)
     {
-      if (stringInput.Contains(wordInput))
+      //Convert Inputs to Char Array
+      char[] stringInputArray = stringInput.ToCharArray();
+      char[] wordInputArray = wordInput.ToCharArray();
+      int count = 0;
+
+      for (int i = 0; i < stringInputArray.Length; i++)
       {
-        return 1;
+        if (stringInputArray[i] == wordInputArray[0])
+        {
+          int j = 0;
+          while (j < wordInputArray.Length)
+          {
+            if (stringInputArray[i+j] == wordInputArray[j])
+            {
+              if (j == wordInputArray.Length -1)
+              {
+                count+=1;
+              }
+              j++;
+            }
+          }
+        }
       }
-      else
-      {
-        return 0;
-      }
+
+      return count;
+      // if (stringInput.Contains(wordInput))
+      // {
+      //   return 1;
+      // }
+      // else
+      // {
+      //   return 0;
+      // }
     }
   }
 }
