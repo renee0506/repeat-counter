@@ -1,3 +1,81 @@
 #word-input {
   width: 20%;
 }
+
+label {
+  font-size:20px;
+  line-height: 200%;
+}
+
+.jumbotron {
+  text-align: center;
+  background: none;
+}
+
+.btn {
+  width: 150px;
+  background-image: url(/Content/img/magnifier.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color:transparent;
+}
+
+#alert {
+  color:red;
+}
+
+body {
+  padding-bottom: 100px;
+  background-image: url(/Content/img/books.gif);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #EFFFE2;
+}
+
+/*the following code was from codepen.io and credited to Thomas Trinca*/
+.jumbotron h1 {
+  font-family: 'Barrio', cursive;
+  font-size:100px;
+  animation: B 4s linear infinite;
+  -moz-animation: B 4s linear infinite;
+  /* Firefox */
+  -webkit-animation: B 4s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: B 4s linear infinite;
+  /* Opera */
+}
+
+.jumbotron h3 {
+  font-family: 'Barrio', cursive;
+}
+
+@keyframes B {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  16.6666666667% {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  33.3333333334% {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+  50% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  66.6666666668% {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+  83.3333333335% {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
