@@ -24,7 +24,7 @@ namespace RepeatCounterProjectTest
     public void RepeatCounterTest_ForStringContainsWordOnce_1()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter();
-      Assert.Equal(1, testRepeatCounter.CountRepeats("Hello", "Hello World"))
+      Assert.Equal(1, testRepeatCounter.CountRepeats("Hello", "Hello World"));
     }
   }
 }

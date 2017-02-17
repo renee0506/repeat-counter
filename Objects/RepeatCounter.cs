@@ -7,7 +7,7 @@ namespace RepeatCounterProject
   {
     public int CountRepeats(string wordInput, string stringInput)
     {
-      if (wordInput == stringInput)
+      if (stringInput.Contains(wordInput))
       {
         return 1;
       }
