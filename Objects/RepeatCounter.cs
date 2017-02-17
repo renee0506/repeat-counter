@@ -10,6 +10,9 @@ namespace RepeatCounterProject
       int count = 0;
       int i = 0;
       //set the initial value of counter and loop tracker i
+      wordInput = wordInput.ToLower();
+      stringInput = stringInput.ToLower();
+      //convert to lower case
       while (i < stringInput.Length)
       {
         if (stringInput[i] == wordInput[0])//detect the beginning char of word input
