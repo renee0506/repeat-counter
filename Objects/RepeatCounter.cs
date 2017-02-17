@@ -26,8 +26,8 @@ namespace RepeatCounterProject
         }
         i++;//if not match countinue to next char
       }
-
       return count;
+
     }
   }
 }
