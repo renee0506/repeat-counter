@@ -19,5 +19,12 @@ namespace RepeatCounterProjectTest
       RepeatCounter testRepeatCounter = new RepeatCounter();
       Assert.Equal(1, testRepeatCounter.CountRepeats("Hello", "Hello"));
     }
+
+    [Fact]//Spec 3
+    public void RepeatCounterTest_ForStringContainsWordOnce_1()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      Assert.Equal(1, testRepeatCounter.CountRepeats("Hello", "Hello World"))
+    }
   }
 }
