@@ -7,10 +7,10 @@ namespace RepeatCounterProjectTest
   public class RepeatCounterTest
   {
     [Fact]
-    public void RepeatCOunterTest_ForNoMatchesFound_0()
+    public void RepeatCounterTest_ForNoMatchesFound_0()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter();
-      Assert.Equal(0, RepeatCounter('Hello', "Good Morning"));
+      Assert.Equal(0, testRepeatCounter.CountRepeats("Hello", "Good Morning"));
     }
   }
 }

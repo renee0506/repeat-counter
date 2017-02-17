@@ -7,7 +7,7 @@ namespace RepeatCounterProject
   {
     public int CountRepeats(string wordInput, string stringInput)
     {
-
+      return 0;
     }
   }
 }
