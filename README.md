@@ -1,18 +1,16 @@
-# _Address Book_
+# _Repeat Counter_
 
-#### _A C# Based Address Book_
+#### _Counts Word Repeats in a Text_
 
 #### By _**Qianye 'Renee' Mei**_
 
 ## Description
 
-_The project is a C# based address book web application with Nancy. The site allows to add new contacts to your existing address book, delete contacts, search contact by name and clear the entire address book._
+_The project is a C# based program that takes into a word and a paragraph of text as input and return the number of times that the word repeats in the text._
 
 ## Instructions
 
-* _Click add contact and fill out the form to add new contact._
-* _Click clear all contacts to clear the address book_
-* _Type in name and click search to search contact by name_
+* _Fill out form and click submit to see counts_
 
 ## Specifications
 
