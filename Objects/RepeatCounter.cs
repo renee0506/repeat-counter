@@ -12,34 +12,21 @@ namespace RepeatCounterProject
       char[] wordInputArray = wordInput.ToCharArray();
       int count = 0;
 
-      for (int i = 0; i < stringInputArray.Length; i++)
+      int i = 0;
+      while (i < stringInputArray.Length)
       {
         if (stringInputArray[i] == wordInputArray[0])
         {
-          int j = 0;
-          while (j < wordInputArray.Length)
+          string slice = stringInput.Substring(i, wordInput.Length);
+          if (slice == wordInput)
           {
-            if (stringInputArray[i+j] == wordInputArray[j])
-            {
-              if (j == wordInputArray.Length -1)
-              {
-                count+=1;
-              }
-              j++;
-            }
+            count+=1;
+            i = i + wordInput.Length-1;
           }
         }
+        i++;
       }
-
       return count;
-      // if (stringInput.Contains(wordInput))
-      // {
-      //   return 1;
-      // }
-      // else
-      // {
-      //   return 0;
-      // }
     }
   }
 }
