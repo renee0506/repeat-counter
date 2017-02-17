@@ -38,7 +38,7 @@ namespace RepeatCounterProjectTest
     public void RepeatCounterTest_ForStringContainsWordCaseDiff_NumberOfRepeats()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter();
-      Assert.Equal(2, testRepeatCounter.CountRepeats("hello", "Hello World. Hello Universe."));
+      Assert.Equal(3, testRepeatCounter.CountRepeats("hello", "Hello WorldHelloUniverse Hello hahaha "));
     }
   }
 }
