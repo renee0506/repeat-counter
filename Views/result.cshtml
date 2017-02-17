@@ -2,7 +2,7 @@
   Layout = "Shared/_Layout.cshtml";
 }
 
-<h1>@Model</h1>
+<h1>The word "@Model["WordInput"]" repeats @Model["Count"] time(s) in "@Model["StringInput"]"</h1>
 <form action="/">
   <button type="submit" class="btn" action="/">New Count</button>
 </form>
