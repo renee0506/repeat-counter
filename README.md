@@ -39,6 +39,11 @@ _The program returns the number of times the input word repeats in the input str
 * Input: word: "hello" string: "Hello World. Hello Universe."
 * Output: 2
 
+_The program returns the number of times the input word repeats in the input string, excluding partial matches._
+
+* Input: word: "hello" string: "Hello World. HelloUniverse. Hello"
+* Output: 2
+
 ## Known Bugs
 
 _None. You are welcomed to report._

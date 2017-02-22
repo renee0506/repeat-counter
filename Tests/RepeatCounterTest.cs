@@ -34,11 +34,18 @@ namespace RepeatCounterProjectTest
       Assert.Equal(2, testRepeatCounter.CountRepeats("Hello", "Hello World. Hello Universe."));
     }
 
-    [Fact]
+    [Fact]//Spec 5
     public void RepeatCounterTest_ForStringContainsWordCaseDiff_NumberOfRepeats()
     {
       RepeatCounter testRepeatCounter = new RepeatCounter();
-      Assert.Equal(3, testRepeatCounter.CountRepeats("hello", "Hello WorldHelloUniverse Hello hahaha "));
+      Assert.Equal(3, testRepeatCounter.CountRepeats("hello", "Hello World. Hello Universe Hello hahaha "));
+    }
+
+    [Fact]//Spec 6
+    public void RepeatCounterTest_ForDisablePartialSearch_NumberOfRepeats()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      Assert.Equal(2, testRepeatCounter.CountRepeats("hello", "Hello World. HelloUniverse Hello"));
     }
   }
 }
